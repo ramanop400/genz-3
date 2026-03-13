@@ -1,0 +1,37 @@
+# Citizen's Dashboard - Requirements
+# Python 3.10+ recommended
+
+# Core LLM Framework
+langgraph>=0.2.0
+langchain>=0.2.0
+langchain-openai>=0.1.0
+langchain-core>=0.2.0
+
+# Token Compression — ScaleDown REST API (no pip package needed)
+# Uses requests to call https://api.scaledown.xyz/compress/raw/
+requests>=2.31.0
+
+# NOTE: PageIndex is NOT a pip package!
+# Clone it manually: git clone https://github.com/VectifyAI/PageIndex.git
+# Then set PAGEINDEX_PATH in your .env file
+
+# Data Validation  
+pydantic>=2.0.0
+
+# Environment Management
+python-dotenv>=1.0.0
+
+# PDF Processing (PageIndex dependencies)
+PyMuPDF>=1.23.0
+pdf2image>=1.16.0
+
+# API Backend
+fastapi>=0.115.0
+uvicorn[standard]>=0.30.0
+python-multipart>=0.0.9
+
+# Local embedding fallback
+sentence-transformers>=3.0.0
+
+# Database for caching summaries
+# sqlite3 is part of Python standard library
